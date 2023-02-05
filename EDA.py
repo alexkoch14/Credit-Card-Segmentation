@@ -1,5 +1,5 @@
 import os
-os.chdir("C:\\Users\\kocha\\Documents\\Queen's\\Year 4\\CISC451\\Project")
+os.chdir(".\\Project")
 
 import pandas as pd
 import numpy as np
