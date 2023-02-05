@@ -1,4 +1,4 @@
-# Credit-Card-Segmentation
+# Credit Card Segmentation
 Credit Card Segmentation Profitability Analysis.
 
 # Problem Definition
@@ -31,3 +31,13 @@ The remaining 40% of revenue is generated from purchase volume and is derived us
 = (Purchase Volume x Interchange Rate) + (Additional Fees)
 
 Interchange is defined as the product of all transactions made on the network each cycle ($ amount) by the interchange rate (2% industry standard). Interchange is a small fee paid by a merchant's bank (acquirer) to a cardholder's bank (issuer) to compensate the issuer for the benefits that merchants receive when they accept electronic payments. Additional fees correspond to ancillary charges such as annual fees, balance transfers, etc. 
+
+# Findings
+The model is capable of capturing approximately 3 of every 5 write-offs (~60% recall) while only misclassifying 1 in 5 good clients (~80% precision). This ratio is markedly superior to baseline results of 1 of every 5 write-offs (~20% recall). Hyperparameter tuning via Bayesian search yielded a 200% in model performance and findings underpin the difficultly in predicting client behaviour on a consistent risk adjusted basis. 
+
+Client profitability is a function of spending behaviour, which is inherently entropic due to the unpredictably of human nature. Demography can be used to segment applicants, but individual performance can vary greatly between clients. Furthermore, historical credit data may not be in indicative of future spending habits since correlation doesn’t always imply causation. 
+
+
+Nonetheless, the experiment provides insight into approval sizing decision boundaries by using a modernized white-box approach that surpasses the outdated legacy models used in industry. Demographic features of lower socio-economic class yield the highest predictive power. In fact, the top 7 reveal that single applicants with blue collar jobs are most likely to default on their credit loans. These clients are also less likely to have assets such as a phone, car, etc. 
+
+The findings justify hunches commonly deduced by front line workers in the branch; less established single proletarians with no assets or dependents can afford jeopardizing their credit history for a quick loan. For clarity, it is discriminatory to deny an applicant based solely on instinct, but results indicate that human intuition isn’t always wrong. 
