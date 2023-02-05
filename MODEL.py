@@ -1,12 +1,12 @@
 import os
-os.chdir("/Users/dustinpulver/CISC_451_Project/")  ## REPLACE ## # Replace directory path with your local path 
+os.chdir("./Project/")  ## REPLACE ## # Replace directory path with your local path 
 
 import pandas as pd
 import numpy as np
 from itertools import chain, groupby
 
-application = pd.read_csv('/Users/dustinpulver/CISC_451_Project/application_record.csv') ## REPLACE ## # Replace file path with your local path for application_record.csv
-credit = pd.read_csv('/Users/dustinpulver/CISC_451_Project/credit_record.csv') ## REPLACE ## # Replace file path with your local path for credit_record.csv
+application = pd.read_csv('./Project/application_record.csv') ## REPLACE ## # Replace file path with your local path for application_record.csv
+credit = pd.read_csv('./Project/credit_record.csv') ## REPLACE ## # Replace file path with your local path for credit_record.csv
 
 #consumers spend 50% of their income
 expenditure     = .50
