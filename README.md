@@ -16,9 +16,9 @@ The dataset is comprised of two files; an application record and a credit record
 ### Target Attribute
 Establishing a base of what drives credit card revenue is paramount in assessing performance since revenue optimization and loss provisioning are the desired scoring parameters. Credit cards make money through two ways: net interest income (~60%) and purchase volume (~40%). Net interest income represents the proceeds generated from overdue fees, and is derived using the following equation:
 
-= Average Balance ×Net Spread
+*= Average Balance × Net Spread
 
-= (*#Active Accounts x *Balance per Active)  × *(Revolve Rate x *Client Rate)
+*= (#Active Accounts x Balance per Active)  × (Revolve Rate x Client Rate)
 
 Average balance is defined as the product of total active accounts by the card balance per active, effectively representing the bank’s total exposure to the consumer market. Net spread is defined as the product of the percentage of active overdue clients (revolvers) by the nominal annual interest rate (19.99% APR industry standard). 
 
@@ -26,8 +26,8 @@ A typical statement cycle is 30 days, and the magnitude of net interest income i
 
 The remaining 40% of revenue is generated from purchase volume and is derived using the following equation:
 
-= *Interchange + Fees
+*= Interchange + Fees
 
-= *(Purchase Volume * Interchange Rate) + (Additional Fees)
+*= (Purchase Volume x Interchange Rate) + (Additional Fees)
 
 Interchange is defined as the product of all transactions made on the network each cycle ($ amount) by the interchange rate (2% industry standard). Interchange is a small fee paid by a merchant's bank (acquirer) to a cardholder's bank (issuer) to compensate the issuer for the benefits that merchants receive when they accept electronic payments. Additional fees correspond to ancillary charges such as annual fees, balance transfers, etc. 
